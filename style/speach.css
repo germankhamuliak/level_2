@@ -1,0 +1,111 @@
+.speach {
+    background-color: #f8f8f8;
+  }
+  .speach__content {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 70px;
+    position: relative;
+  }
+  .speach__content::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-top: 1px solid #c6cbcd;
+    border-left: 1px solid #c6cbcd;
+    display: inline-block;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    cursor: pointer;
+  }
+  .speach__content::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-top: 1px solid #c6cbcd;
+    border-left: 1px solid #c6cbcd;
+    display: inline-block;
+    transform: rotate(135deg);
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    cursor: pointer;
+  }
+  .speach__content_img {
+    width: 20%;
+    max-width: 170px;
+  }
+  .speach__content_img img {
+    width: 100%;
+  }
+  
+  .speach__content_text {
+    width: 75%;
+    max-width: 770px;
+  }
+  
+  .speach__content_text p {
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #a9afb1;
+  }
+  .speach__content_text h3 {
+    font-family: Kaushan Script;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 120px;
+    padding-top: 20px;
+    position: relative;
+  }
+  
+  .speach__content_text h3::before {
+    content: "";
+    width: 70px;
+    height: 4px;
+    display: inline-block;
+    background-color: #f38281;
+    position: absolute;
+    top: 40px;
+    left: 0;
+  }
+  @media (max-width: 1100px) {
+    .speach__content_text p {
+      font-size: 18px;
+    }
+    .speach__content_text h3 {
+      font-size: 24px;
+    }
+    .speach__content_img {
+      max-width: 130px;
+    }
+  }
+  @media (max-width: 700px) {
+    .speach__content_img {
+      display: none;
+    }
+    .speach__content {
+      justify-content: center;
+      padding: 20px 20px;
+    }
+    .speach__content_text {
+      width: 90%;
+    }
+    .speach__content::before {
+      display: none;
+    }
+    .speach__content::after {
+      display: none;
+    }
+  }

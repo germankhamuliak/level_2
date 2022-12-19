@@ -1,0 +1,33 @@
+.design {
+    background: url(../img/design/bg.png) center no-repeat;
+    background-size: cover;
+  }
+  .design__fon {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .design__content {
+    position: relative;
+    text-align: center;
+  }
+  img.ipad {
+    width: 80%;
+    max-width: 700px;
+    margin-top: 150px;
+    margin-bottom: 60px;
+  }
+  
+  img.ifon {
+    position: absolute;
+    bottom: -50px;
+    left: 68%;
+    width: 25%;
+    max-width: 200px;
+  }
+  @media (max-width: 570px) {
+    img.ipad {
+      width: 80%;
+      max-width: 700px;
+      margin-top: 150px;
+      margin-bottom: 20px;
+    }
+  }

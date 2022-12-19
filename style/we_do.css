@@ -1,0 +1,134 @@
+.we_do__content {
+  display: flex;
+  justify-content: space-between;
+  color: #2d3033;
+  width: 100%;
+}
+.we_do__content_el {
+  width: 49%;
+  max-width: 570px;
+}
+.we_do__content_foto img {
+  width: 100%;
+}
+.we_do__content_text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.we_do__content_text_el {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #c6cbcd;
+  position: relative;
+}
+
+.text_el_icon {
+  width: 20%;
+  max-width: 42px;
+  max-height: 42px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+.we_do__content_text_el h4 {
+  width: 100%;
+  min-height: 90px;
+  height: 20%;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 33px;
+  padding-left: 100px;
+  border-bottom: 1px solid #c6cbcd;
+  cursor: pointer;
+}
+
+.text_el_normal h4 {
+  border: none;
+}
+.text_el_active h4::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid #c6cbcd;
+  border-left: 1px solid #c6cbcd;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+
+.text_el_normal h4::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid #c6cbcd;
+  border-left: 1px solid #c6cbcd;
+  display: inline-block;
+  transform: rotate(-135deg);
+  position: absolute;
+  right: 20px;
+  top: 35px;
+}
+
+.we_do__content_text_el p {
+  width: 100%;
+  padding: 10px 30px 10px 20px;
+  max-height: 130px;
+  overflow-y: auto;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  scrollbar-color: #95e1d3;
+}
+@media (max-width: 1100px) {
+  .we_do__content_text_el h4 {
+    min-height: 50px;
+    padding-top: 10px;
+    padding-left: 60px;
+    font-size: 18px;
+  }
+  .text_el_icon {
+    top: 5px;
+    left: 10px;
+  }
+  .text_el_active h4::after {
+    top: 10px;
+  }
+  .text_el_normal h4::after {
+    top: 10px;
+  }
+  .we_do__content_text_el p {
+    max-height: 100px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .we_do__content {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .we_do__content_el {
+    width: 90%;
+    max-width: 570px;
+  }
+  .we_do__content_text_el h4 {
+    margin-top: 20px;
+  }
+}

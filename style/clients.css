@@ -1,0 +1,107 @@
+.clients {
+    background: url(../img/clients/bg.png) center no-repeat;
+    background-size: cover;
+  }
+  .clients__content {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .client {
+    width: 47%;
+    position: relative;
+    max-width: 500px;
+    margin-bottom: 100px;
+  }
+  .client__img {
+    position: absolute;
+  }
+  .client_text {
+    width: 100%;
+    padding-left: 150px;
+    color: #2d3033;
+    text-align: left;
+  }
+  .client_text h2 {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+  }
+  .client_text h3 {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    padding-top: 10px;
+    position: relative;
+  }
+  .client_text h3::after {
+    content: "";
+    width: 70px;
+    height: 4px;
+    background-color: #f38281;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+  }
+  .client_text p {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    padding-top: 70px;
+  }
+  @media (max-width: 1100px) {
+    .client_text {
+      padding-left: 80px;
+    }
+    .client_text h2 {
+      font-size: 18px;
+    }
+    .client_text h3 {
+      font-size: 14px;
+      padding-top: 10px;
+    }
+    .client_text p {
+      font-size: 14px;
+    }
+    .client__img img {
+      max-width: 70px;
+    }
+  }
+  @media (max-width: 700px) {
+    .clients__content {
+      justify-content: center;
+    }
+    .client {
+      width: 90%;
+      position: relative;
+      max-width: 500px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .client_text {
+      padding-left: 0;
+      text-align: center;
+    }
+    .client_text h3::after {
+      content: "";
+      width: 15%;
+      max-width: 90px;
+      height: 4px;
+      background-color: #f38281;
+      position: absolute;
+      bottom: -30px;
+      left: 43%;
+    }
+    .client__img {
+      position: relative;
+    }
+  }
